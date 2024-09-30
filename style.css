@@ -1,0 +1,373 @@
+
+/* loading */
+.loading-p{
+    width: 100%;
+    height: 100vh;
+    
+    background-color: black;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.ring{
+    width: 200px;
+    height: 200px;
+    border: 0px solid #011015;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.ring:nth-child(1){
+    border-bottom-width: 10px;
+    border-color:rgb(241, 15, 241);
+    animation: rotate 2s linear infinite;
+}
+
+.ring:nth-child(2){
+    border-right-width: 10px;
+    border-color:rgb(22, 241, 15);
+    animation: rot 2s linear infinite;
+}
+
+.ring:nth-child(3){
+    border-right-width: 10px;
+    border-color:rgb(213, 213, 9);
+    animation: rot3 2s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateX(35deg) rotateY(-45deg) rotateZ(360deg);
+    }
+}
+
+@keyframes rot{
+    0%{
+        transform: rotateX(50deg) rotateY(-10deg) rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateX(50deg) rotateY(-10deg) rotateZ(360deg);
+    }
+}
+
+
+@keyframes rot3{
+    0%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(0deg);
+    }
+
+    100%{
+        transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
+    }
+}
+
+/* body */
+body{
+    
+    background-color: black !important;
+}
+/* header nav */
+
+ .navbar-brand{
+    font-size: 20px !important;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+.navbar-brand:hover{
+    color: var(--mycolor) !important;
+}
+
+.nav-img{
+    overflow: hidden;
+}
+
+.nav-img img:hover{
+    transform:scale(1.5);
+    transition: 1s;
+
+}
+
+.nav-item a{
+     font-weight:bolder;
+      transition: 2s;
+     
+} 
+
+.nav-item a:hover{
+    background: linear-gradient(rgb(12, 146, 213),rgb(213, 166, 71));
+    border-radius: 8px;
+    color: rgb(16, 16, 16) !important;}
+
+
+
+
+/* rood */
+
+:root{
+    --mycolor:red;
+    --fontsize:35px;
+    --showdow:4px 4px 7px rgb(66, 89, 97);
+}
+
+
+
+#home{
+    width: 100%;
+    min-height: 90vh;
+    background-image: url(image/home3.jpg) ;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+    
+}
+
+.home-h{
+    font-size: var(--fontsize) !important;
+    font-weight:bolder;
+    letter-spacing: 1px;
+}
+
+.home-p{
+    font-size: 18px !important;
+    letter-spacing: 1px;
+
+
+}
+
+.home-btn{
+    width: 200px;
+    font-weight: bolder !important;
+    color: black !important;
+    background: linear-gradient(rgb(221, 17, 194),rgb(59, 122, 189));
+    transition: 2s !important;
+}
+
+.home-btn:hover{
+
+    background: black !important;
+    color: rgb(255, 77, 0) !important;
+    border: 1px solid white !important;
+}
+
+
+/* about */
+
+.about-h{
+    font-size:35px !important;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+#about p{
+    font-size: 18px !important;
+    text-align: justify !important;
+}
+
+
+/* slide */
+
+.carousel-inner{
+    width: 100%;
+    height: 400px;
+}
+
+.carousel-item img{
+    width: 100% ;
+    height: 400px;
+
+}
+
+.carousel{
+    width: 100% ;
+    height: 400px;
+}
+
+
+
+
+/* card */
+
+.card{
+    box-shadow: var(--showdow);
+}
+
+.card-i i{
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 10px !important;
+    background:rgb(14, 14, 14) !important;
+    color: rgb(245, 120, 11);
+}
+
+.card-i i:hover{
+
+    background:rgb(168, 15, 173) !important;
+    color: rgb(244, 240, 236);
+
+}
+
+.c-body{
+    background:linear-gradient(rgba(99, 110, 114,1.0),rgba(45, 52, 54,1.0));
+    text-align: center;
+}
+
+.c-body:hover{
+
+    background:linear-gradient(rgb(119, 189, 214),rgba(45, 52, 54,1.0));
+
+}
+
+.card-body .btn{
+    width: 150px;
+    background: linear-gradient(rgba(0, 184, 148,1.0),rgb(109, 121, 119)) !important;
+}
+
+.card-body .btn:hover{
+
+    background: linear-gradient(rgb(195, 68, 191),rgb(109, 121, 119)) !important;
+
+}
+
+
+/* product */
+
+.p-icon i{
+    width: 35px;
+    height: 35px;
+    /* background-color: rgb(29, 28, 28); */
+    padding: 5px;
+    /* color: white; */
+    font-size: 18px;
+    overflow: hidden;
+    
+}
+
+.p-icon i:hover{
+
+   
+    border: 2px solid rgb(12, 213, 8);
+
+}
+
+
+.p-body{
+    background-color: black !important;
+    text-align: center;
+}
+
+/* review */
+
+.r-card{
+    background-color: black !important;
+    border: 1px solid white !important;
+}
+
+.r-img{
+    overflow: hidden;
+}
+
+.r-img img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.r-img img:hover{
+    transform: scale(0.9);
+}
+
+ /* d-home */
+
+
+ #d-home{
+    min-height: 50vh;
+    background: url(image/shop-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: grid;
+    place-content: center;
+ }
+
+ 
+
+ .c-top{
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    background-color: aqua !important;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+ }
+
+ .h-top{
+   width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+ }
+
+ .h-top i:hover{
+    color: red !important;
+ }
+
+
+ /* footer */
+
+ #footer p:hover{
+    color: red !important;
+ }
+
+
+ /* kolakata page */
+
+ .kol-inner{
+    width: 100%;
+    height: 500px !important;
+ }
+
+
+ /* chennai */
+
+ #c-home{
+    height: 400px;
+    background: url(image/k-5.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    place-content: center;
+ }
+
+
+ #l-home{
+    
+        height: 400px;
+        background: url(image/home2.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        place-content: center;
+     
+ }
+ 
