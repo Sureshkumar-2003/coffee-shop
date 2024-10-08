@@ -1,6 +1,13 @@
+*{
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+
+
 
 /* loading */
-.loading-p{
+/* .loading-p{
     width: 100%;
     height: 100vh;
     
@@ -67,7 +74,7 @@
     100%{
         transform: rotateX(35deg) rotateY(55deg) rotateZ(360deg);
     }
-}
+} */ 
 
 /* body */
 body{
@@ -130,6 +137,8 @@ body{
     background-attachment: fixed;
     display: grid;
     place-items: center;
+
+    overflow: hidden;
     
 }
 
@@ -164,6 +173,10 @@ body{
 
 /* about */
 
+#ABOUT{
+    overflow: hidden;
+}
+
 .about-h{
     font-size:35px !important;
     font-weight: bolder;
@@ -178,6 +191,8 @@ body{
 
 /* slide */
 
+
+
 .carousel-inner{
     width: 100%;
     height: 400px;
@@ -186,6 +201,7 @@ body{
 .carousel-item img{
     width: 100% ;
     height: 400px;
+    object-fit: cover;
 
 }
 
@@ -199,8 +215,13 @@ body{
 
 /* card */
 
+#cafe{
+    overflow: hidden;
+}
+
 .card{
     box-shadow: var(--showdow);
+    
 }
 
 .card-i i{
@@ -242,8 +263,20 @@ body{
 
 }
 
+/* contact */
+
+#contact{
+    padding-bottom: 40px;
+    overflow: hidden;
+ }
+
 
 /* product */
+
+#product{
+    padding-bottom: 40px;
+    overflow: hidden;
+}
 
 .p-icon i{
     width: 35px;
@@ -271,6 +304,11 @@ body{
 
 /* review */
 
+#review{
+    overflow: hidden;
+    padding-bottom: 40px;
+}
+
 .r-card{
     background-color: black !important;
     border: 1px solid white !important;
@@ -293,6 +331,8 @@ body{
  /* d-home */
 
 
+
+
  #d-home{
     min-height: 50vh;
     background: url(image/shop-2.webp);
@@ -304,7 +344,15 @@ body{
     place-content: center;
  }
 
+
+ #menu{
+    overflow: hidden;
+    padding-bottom: 40px;
+ }
  
+ #OUR-SHOP{
+    overflow: hidden;
+ }
 
  .c-top{
     width: 50px;
@@ -333,8 +381,16 @@ body{
 
  /* footer */
 
+ #footer{
+    overflow: hidden;
+ }
+
  #footer p:hover{
     color: red !important;
+ }
+
+ .foot-icon a{
+    text-decoration: none !important;
  }
 
 
@@ -371,3 +427,5 @@ body{
      
  }
  
+
+
